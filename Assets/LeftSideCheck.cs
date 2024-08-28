@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class SideCheck : RandomEvent
+public class LeftSideCheck : RandomEvent
 {
     private bool isStart;
 
-    private static int currentRightCnt = 0;
+    public static int currentLeftCnt = 0;
 
     [SerializeField]
     private Vector2 size;
@@ -20,24 +20,24 @@ public class SideCheck : RandomEvent
 
     private void Update()
     {
-        if(isStart)
+        if (isStart)
         {
-            Collider2D[] overlap = Physics2D.OverlapBoxAll(transform.position,size,0);
-            if(overlap != null)
+            Collider2D[] overlap = Physics2D.OverlapBoxAll(transform.position, size, 0);
+            if (overlap != null)
             {
                 int leftCnt = 0;
-                int rightCnt = 0;
 
-                for(int i = 0; i<overlap.Length; i++)
+                for (int i = 0; i < overlap.Length; i++)
                 {
                     bool isJunjaLeft = overlap[i].GetComponent<MovingJunja>().isLeft;
-                    if(isJunjaLeft == false)
+
+                    if (isJunjaLeft == true)
                     {
-                        ++rightCnt;
+                        ++leftCnt;
                     }
                 }
-                currentRightCnt = rightCnt;
-            print($"{currentRightCnt}오른쪽");
+                currentLeftCnt = leftCnt;
+                print($"{currentLeftCnt}왼쪽");
             }
             // 여기서 전자의 개수를 체크하고
         }
