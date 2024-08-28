@@ -22,6 +22,9 @@ public class MovingBando : RandomEvent
     {
         isStart = true;
         base.Enter();
+        int i = Random.Range(0,2);
+        if (i == 0)
+            isLeft = true;
         RandomMove();
         rigid = GetComponent<Rigidbody2D>();
     }

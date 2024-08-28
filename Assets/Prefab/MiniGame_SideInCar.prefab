@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 1904795414542710079}
   - component: {fileID: 6380277649074082893}
   - component: {fileID: 6065154749184849941}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: myCar-removebg-preview (5)
   m_TagString: Car
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 4976425759545847271}
   - component: {fileID: 722661327121024055}
   - component: {fileID: 7677071452201448321}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: myCar-removebg-preview (4)
   m_TagString: Car
   m_Icon: {fileID: 0}
