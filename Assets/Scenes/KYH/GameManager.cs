@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     public void EndPanel()
     {
+        timerManager.isTimerStart = false;
         textManager.textMeshPro.text = "";
         timerManager.textMeshPro.text = "";
         readyPanel.SetActive(true);

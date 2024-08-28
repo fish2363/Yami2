@@ -16,15 +16,14 @@ public class MovingBando : RandomEvent
 
     private Rigidbody2D rigid;
 
-    private void Awake()
-    {
-        rigid = GetComponent<Rigidbody2D>();
-    }
+    bool isStart;
 
     public override void Enter()
     {
+        isStart = true;
         base.Enter();
         RandomMove();
+        rigid = GetComponent<Rigidbody2D>();
     }
 
     private void RandomMove()
@@ -52,8 +51,9 @@ public class MovingBando : RandomEvent
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && isStart)
         {
+            isStart = false;
             isStop = true;
             transform.DOKill();
             rigid.velocity = new Vector2(rigid.velocity.x, -6);
@@ -63,6 +63,9 @@ public class MovingBando : RandomEvent
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("ColliderObj"))
-            TimerManager.instance.OnDead.Invoke();
+            TimerManager.instance.OnDead?.Invoke();
+
+        if(collision.CompareTag("Ground"))
+            TimerManager.instance.OnDead?.Invoke();
     }
 }
