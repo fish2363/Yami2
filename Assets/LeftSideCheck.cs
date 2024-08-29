@@ -5,9 +5,11 @@ using UnityEngine.EventSystems;
 
 public class LeftSideCheck : RandomEvent
 {
+    public SoonsooBandoMakeManager makeManager;
+
     private bool isStart;
 
-    public static int currentLeftCnt = 0;
+    public int currentLeftCnt = 0;
 
     [SerializeField]
     private Vector2 size;
@@ -20,7 +22,7 @@ public class LeftSideCheck : RandomEvent
 
     private void Update()
     {
-        if (isStart)
+        if (isStart && makeManager != null)
         {
             Collider2D[] overlap = Physics2D.OverlapBoxAll(transform.position, size, 0);
             if (overlap != null)
@@ -37,7 +39,7 @@ public class LeftSideCheck : RandomEvent
                     }
                 }
                 currentLeftCnt = leftCnt;
-                print($"{currentLeftCnt}왼쪽");
+                makeManager.CheckCount(currentLeftCnt, true);
             }
             // 여기서 전자의 개수를 체크하고
         }

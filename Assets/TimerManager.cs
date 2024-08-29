@@ -15,6 +15,7 @@ public class TimerManager : MonoBehaviour
     public bool isTimerStart = false;
 
     public Action OnDead;
+    public Action OnFinish;
 
     private void Awake()
     {
@@ -38,7 +39,6 @@ public class TimerManager : MonoBehaviour
                 isTimerStart = false;
                 OnDead?.Invoke();
             }
-            
         }
     }
 }
