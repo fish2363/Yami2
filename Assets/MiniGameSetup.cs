@@ -60,7 +60,10 @@ public class MiniGameSetup : MonoBehaviour
             waitingTime -= Time.deltaTime;
             text.text = waitingTime.ToString().Substring(0,1);
             if (waitingTime < 1)
+            {
+                timer.StartTimer();
                 StartGame();
+            }
         }
     }
 }

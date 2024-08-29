@@ -40,7 +40,6 @@ public class MiniGameManager : MonoBehaviour
         Instantiate(gameSequencing);
         gameSequencing.SetActive(true);
         timerManager.timer = time;
-        timerManager.StartTimer();
         gameSequencing = null;
     }
 }

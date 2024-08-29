@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81f5ecaf87505764796a1d573766d060, type: 3}
-  m_Name: MakeSunSooBando
+  m_Name: JunjaJundal
   m_EditorClassIdentifier: 
-  sequencing: {fileID: 4915267718284212159, guid: 2d38b1c9cc1652c449baf30fbd48fcee, type: 3}
-  time: 7
-  textNum: 2
+  sequencing: {fileID: 1132393142986965352, guid: 095b90300cd43874082a66a6e555d80f, type: 3}
+  time: 9
+  textNum: 4
