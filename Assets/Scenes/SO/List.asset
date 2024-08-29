@@ -15,4 +15,5 @@ MonoBehaviour:
   randomStageSOs:
   - {fileID: 11400000, guid: 9987faeb23585c0418a2d358b94348f2, type: 2}
   - {fileID: 11400000, guid: 8e34cdb6075dd0e40b50c17cf6dbd0f0, type: 2}
-  - {fileID: 11400000, guid: a39f9501c90362b42ae5c7ce9233645d, type: 2}
+  - {fileID: 11400000, guid: 57d2ad98739208244b3472c4a63f87b3, type: 2}
+  - {fileID: 11400000, guid: 5b9bea2e1b294ec4f8a04ec2597efba7, type: 2}

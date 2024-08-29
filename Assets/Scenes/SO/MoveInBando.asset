@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f5ecaf87505764796a1d573766d060, type: 3}
   m_Name: MoveInBando
   m_EditorClassIdentifier: 
-  sequencing: {fileID: 0}
-  time: 0
-  textNum: 0
+  sequencing: {fileID: 994375967584513535, guid: d576404c59e88d342a5c3167ae41df3f, type: 3}
+  time: 5
+  textNum: 3

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f5ecaf87505764796a1d573766d060, type: 3}
   m_Name: DriveCarInManyCar
   m_EditorClassIdentifier: 
-  sequencing: {fileID: 2248508550748207283, guid: c2f005323d3bd744a8c99dbe8f512151, type: 3}
-  time: 20
+  sequencing: {fileID: 4852683558162177794, guid: 018d51ea54d85ab46a69158c9bf70f61, type: 3}
+  time: 7
   textNum: 1

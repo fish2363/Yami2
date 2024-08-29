@@ -12,9 +12,10 @@ public class TimerManager : MonoBehaviour
     public float timer;
     public TextMeshProUGUI textMeshPro;
 
-    private static bool isTimerStart = false;
+    public bool isTimerStart = false;
 
     public Action OnDead;
+    public Action OnFinish;
 
     private void Awake()
     {
@@ -38,7 +39,6 @@ public class TimerManager : MonoBehaviour
                 isTimerStart = false;
                 OnDead?.Invoke();
             }
-            
         }
     }
 }

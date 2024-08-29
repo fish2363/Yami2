@@ -34,11 +34,12 @@ public class MiniGameManager : MonoBehaviour
         time = newStageSO.time;
         textNum = newStageSO.textNum;
         gameSequencing = newStageSO.sequencing;
+        print(gameSequencing);
 
         textManager.InputText(textNum);
         Instantiate(gameSequencing);
         gameSequencing.SetActive(true);
         timerManager.timer = time;
-        timerManager.StartTimer();
+        gameSequencing = null;
     }
 }

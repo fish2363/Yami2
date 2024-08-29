@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f5ecaf87505764796a1d573766d060, type: 3}
   m_Name: MakeSunSooBando
   m_EditorClassIdentifier: 
-  sequencing: {fileID: 6841620246720110561, guid: 122ea54d21e54fd4eb7dbbcc9bb60172, type: 3}
-  time: 15
+  sequencing: {fileID: 4915267718284212159, guid: 2d38b1c9cc1652c449baf30fbd48fcee, type: 3}
+  time: 7
   textNum: 2
