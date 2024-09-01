@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331789ceab09d9440822766c4968c5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequencingSOList: {fileID: 11400000, guid: ab63875e619705e4b8723c68535a6c30, type: 2}
+  sequencingSOList: {fileID: 11400000, guid: 2597735e4f8afbe4bb8ddc074a8b4479, type: 2}
   textManager: {fileID: 694201458}
   timerManager: {fileID: 408421384}
   healthManager: {fileID: 1256276852}
