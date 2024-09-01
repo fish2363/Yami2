@@ -66,9 +66,9 @@ public class MovingBando : RandomEvent
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("ColliderObj"))
-            TimerManager.instance.OnDead?.Invoke();
+            TimerManager.instance.OnDead?.Invoke(true);
 
         if(collision.CompareTag("Ground"))
-            TimerManager.instance.OnDead?.Invoke();
+            TimerManager.instance.OnDead?.Invoke(false);
     }
 }

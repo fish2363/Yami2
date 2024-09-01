@@ -21,10 +21,9 @@ public class MiniGameSetup : MonoBehaviour
     private void OnDisable()
     {
         timer.OnDead -= EndGame;
-        
     }
 
-    private void EndGame()
+    private void EndGame(bool survival)
     {
         RandomEvent[] game = GetComponentsInChildren<RandomEvent>();
         foreach (RandomEvent randomEvent in game)
@@ -32,7 +31,7 @@ public class MiniGameSetup : MonoBehaviour
             
             randomEvent.Exit();
         }
-            GameManager.Instance.EndPanel();
+            GameManager.Instance.EndPanel(survival);
             Destroy(gameObject);
     }
 

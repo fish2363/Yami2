@@ -12,6 +12,8 @@ public class MiniGameManager : MonoBehaviour
     private TextManager textManager;
     [SerializeField]
     private TimerManager timerManager;
+    [SerializeField]
+    private HealthManager healthManager;
 
     private RandomStageSO newStageSO;
     private float time;
@@ -23,10 +25,17 @@ public class MiniGameManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        StartGame();
+    }
+
     public void StartGame()
     {
         if (gameSequencing != null)
             gameSequencing.SetActive(false);
+
+        healthManager.lifeCount.text = "";
 
         int randNum = Random.Range(0, sequencingSOList.randomStageSOs.Count);
         newStageSO = sequencingSOList.randomStageSOs[randNum];

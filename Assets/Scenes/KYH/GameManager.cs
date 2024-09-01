@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     private TextManager textManager;
     [SerializeField]
     private TimerManager timerManager;
+    [SerializeField]
+    private HealthManager healthManager;
+
     public GameObject readyPanel;
 
     private void Awake()
@@ -22,12 +25,17 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
-    public void EndPanel()
+    public void EndPanel(bool finish)
     {
         timerManager.isTimerStart = false;
         textManager.textMeshPro.text = "";
         timerManager.textMeshPro.text = "";
         readyPanel.SetActive(true);
+        if (finish)
+            ScoreManager.instance.ScoreManeger(1);
+        else
+            healthManager.Result(1);
+        healthManager.Show();
         StartCoroutine(WaitAndStart());
     }
 

@@ -31,11 +31,17 @@ public class Slot : RandomEvent,IDropHandler
         }
     }
 
+    public override void Exit()
+    {
+        base.Exit();
+        finish = 0;
+    }
+
     private void Update()
     {
         if(finish == 4)
         {
-            TimerManager.instance.OnDead?.Invoke();
+            TimerManager.instance.OnDead?.Invoke(true);
             finish = 0;
         }
     }
