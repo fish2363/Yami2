@@ -13,13 +13,16 @@ public class HealthManager : MonoBehaviour
 
     public void Show()
     {
-        lifeCount.text = Health.ToString();
-        lifeText.text = "格见";
+        lifeCount.text = $"格见{Health}";
     }
 
     public void Result(int minusHealth)
     {
         Health -= minusHealth;
+        if (Health <= 0)
+        {
+            print("丛 第咙");
+        }
     }
 
 }

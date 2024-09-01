@@ -27,24 +27,16 @@ public class GameManager : MonoBehaviour
 
     public void EndPanel(bool finish)
     {
-        if(healthManager.Health <= 0)
-        {
-            print("´Ô µÚÁü");
-
-        }
+        timerManager.isTimerStart = false;
+        textManager.textMeshPro.text = "";
+        timerManager.textMeshPro.text = "";
+        readyPanel.SetActive(true);
+        if (finish)
+            ScoreManager.instance.ScoreManeger(1);
         else
-        {
-            timerManager.isTimerStart = false;
-            textManager.textMeshPro.text = "";
-            timerManager.textMeshPro.text = "";
-            readyPanel.SetActive(true);
-            if (finish)
-                ScoreManager.instance.ScoreManeger(1);
-            else
-                healthManager.Result(1);
-            healthManager.Show();
-            StartCoroutine(WaitAndStart());
-        }
+            healthManager.Result(1);
+        healthManager.Show();
+        StartCoroutine(WaitAndStart());
     }
 
     private IEnumerator WaitAndStart()
