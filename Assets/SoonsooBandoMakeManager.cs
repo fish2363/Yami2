@@ -27,7 +27,7 @@ public class SoonsooBandoMakeManager : RandomEvent
     {
         print($"{currentLeftCnt}¿Þ{currentRightCnt}¿ì");
         if (currentRightCnt == 5 && currentLeftCnt == 3)
-            TimerManager.instance.OnDead();
+            TimerManager.instance.OnDead(true);
     }
 
     public override void Exit()

@@ -42,12 +42,5 @@ public class MoveSide : RandomEvent
     {
         base.Exit();
         RandomMove(true);
-        StartCoroutine(EndRoutine());
-    }
-
-    private IEnumerator EndRoutine()
-    {
-        yield return new WaitForSeconds(2f);
-        GameManager.Instance.EndPanel();
     }
 }

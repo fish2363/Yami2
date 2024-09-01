@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class HealthManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("최대 체력")]
+    public int Health;
+
+    public TextMeshProUGUI lifeCount;
+    public TextMeshProUGUI lifeText;
+
+    public void Show()
     {
-        
+        lifeCount.text = Health.ToString();
+        lifeText.text = "목숨";
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Result(int minusHealth)
     {
-        
+        Health -= minusHealth;
     }
+
 }

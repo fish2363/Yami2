@@ -31,7 +31,7 @@ public class MiniGameSetup : MonoBehaviour
             
             randomEvent.Exit();
         }
-            GameManager.Instance.EndPanel(false);
+            GameManager.Instance.EndPanel(survival);
             Destroy(gameObject);
     }
 

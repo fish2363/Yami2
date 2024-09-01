@@ -35,7 +35,7 @@ public class SideInCar : RandomEvent
         if(collision.gameObject.CompareTag("Car"))
         {
             print("Ãæµ¹");
-            timer.OnDead();
+            timer.OnDead(false);
         }
     }
 
