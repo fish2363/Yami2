@@ -29,7 +29,7 @@ public class HealthManager : MonoBehaviour
 
     private IEnumerator WaitDie()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         SceneManager.LoadScene(0);
     }
 
