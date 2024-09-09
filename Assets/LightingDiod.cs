@@ -35,7 +35,7 @@ public class LightingDiod : RandomEvent
 
     private IEnumerator TimerSecond()
     {
-        sprite.flipX = true;
+        sprite.flipX = false;
         prevBackGround.sprite = nextBackGround;
         yield return new WaitForSeconds(0.7f);
         TimerManager.instance.OnDead?.Invoke(true);
