@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331789ceab09d9440822766c4968c5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequencingSOList: {fileID: 11400000, guid: 2597735e4f8afbe4bb8ddc074a8b4479, type: 2}
+  sequencingSOList: {fileID: 11400000, guid: edf713d4160b70a42831afba84f3c8ef, type: 2}
   textManager: {fileID: 694201458}
   timerManager: {fileID: 408421384}
   healthManager: {fileID: 1256276852}
@@ -561,11 +561,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - "\uCC28\uAC00 \uBD80\uC11C\uC9C0\uC9C0 \uC54A\uAC8C \uD53C\uD558\uC138\uC694"
   - "\uCC28\uB07C\uB9AC \uCDA9\uB3CC\uD558\uC9C0 \uC54A\uAC8C \uC6B4\uC804\uD558\uC138\uC694"
   - "\uC21C\uC218 \uBC18\uB3C4\uCCB4\uB97C \uB9CC\uB4DC\uC138\uC694"
   - "\uBC18\uB3C4\uCCB4\uB97C \uCEF4\uD4E8\uD130\uC5D0 \uB123\uC73C\uC138\uC694"
   - "\uC591\uACF5\uACFC \uC804\uC790\uB97C \uC11C\uB85C \uBD84\uB958\uD558\uB77C!"
+  - "\uB2E4\uC774\uC624\uB4DC\uB97C \uB20C\uB7EC \uC804\uAD6C\uB97C \uCF1C\uB77C!"
   textMeshPro: {fileID: 1613148066}
 --- !u!4 &694201459
 Transform:
