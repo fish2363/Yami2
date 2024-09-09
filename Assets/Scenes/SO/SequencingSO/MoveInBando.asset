@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequencing: {fileID: 994375967584513535, guid: d576404c59e88d342a5c3167ae41df3f, type: 3}
   time: 5
-  textNum: 3
+  textNum: 2

@@ -2452,7 +2452,7 @@ GameObject:
   - component: {fileID: 1083882143}
   - component: {fileID: 1083882142}
   m_Layer: 5
-  m_Name: RawImage (4)
+  m_Name: SoonsoDirection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2498,7 +2498,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: bdd086b6ac55af34da426f7255205b80, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3647,7 +3647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8eb2c85273fab4448af3d25a571e366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisSequencing: {fileID: 0}
+  thisSequencing: {fileID: 11400000, guid: edf713d4160b70a42831afba84f3c8ef, type: 2}
 --- !u!1 &2140133270
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,7 +3705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBC18\uB3C4\uCCB4 \uC6B4\uC804"
+  m_text: "\uC21C\uBC29\uD5A5 \uC5F0\uACB0\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e72b94b3cd22d9140a8beaaedaadcb6a, type: 2}
   m_sharedMaterial: {fileID: -232403219245049157, guid: e72b94b3cd22d9140a8beaaedaadcb6a, type: 2}
