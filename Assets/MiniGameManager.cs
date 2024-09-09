@@ -27,6 +27,8 @@ public class MiniGameManager : MonoBehaviour
 
     private void Start()
     {
+        GameChooseManager chooseSequencing = FindAnyObjectByType<GameChooseManager>();
+        sequencingSOList = chooseSequencing.sequencing;
         StartGame();
     }
 

@@ -8,6 +8,6 @@ public class TitleGame : MonoBehaviour
     // Start is called before the first frame update
     public void OnStart()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("GameChoose");
     }
 }
