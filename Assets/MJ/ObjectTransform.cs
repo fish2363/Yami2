@@ -9,5 +9,15 @@ public class ObjectTransform : MonoBehaviour
     private void Update()
     {
         transform.position = _StandingTransform.position;
+
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Car"))
+        {
+            TimerManager.instance.OnDead?.Invoke(false);
+        }
     }
 }
