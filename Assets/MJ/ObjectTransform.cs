@@ -6,10 +6,16 @@ public class ObjectTransform : MonoBehaviour
 {
     [SerializeField] private Transform _StandingTransform;
 
+    private CarMove carMove;
+
+    private void Awake()
+    {
+        carMove = FindAnyObjectByType<CarMove>();
+    }
+
     private void Update()
     {
         transform.position = _StandingTransform.position;
-
     }
 
 
@@ -17,7 +23,14 @@ public class ObjectTransform : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Car"))
         {
-            TimerManager.instance.OnDead?.Invoke(false);
+            carMove.isStop = true;
+            StartCoroutine(DeadRoutine());
         }
+    }
+
+    private IEnumerator DeadRoutine()
+    {
+        yield return new WaitForSeconds(1f);
+        TimerManager.instance.OnDead?.Invoke(false);
     }
 }

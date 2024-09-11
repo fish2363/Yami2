@@ -3,11 +3,7 @@ using DG.Tweening;
 public class CarMoveForward : RandomEvent
 {
     private bool _isStart = false;
-
-
-    private void Awake()
-    {
-    }
+    
 
     public override void Enter()
     {

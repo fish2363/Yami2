@@ -9,6 +9,9 @@ public class CarMove : RandomEvent
     [SerializeField] private GameObject _moveRight;
     [SerializeField] private GameObject _moveCenter;
 
+    [HideInInspector]
+    public bool isStop = false;
+
     public override void Enter()
     {
         base.Enter();
@@ -17,7 +20,7 @@ public class CarMove : RandomEvent
 
     private void Update()
     {
-        if(_isStart == true)
+        if(_isStart == true && !isStop)
         {
         if (transform.position == _moveRight.transform.position && Input.GetKeyDown(KeyCode.A))
         {

@@ -14,7 +14,7 @@ public class FinishPoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == _player.name)
+        if(collision.gameObject.CompareTag("Player"))
         {
             TimerManager.instance.OnDead?.Invoke(true);
         }
