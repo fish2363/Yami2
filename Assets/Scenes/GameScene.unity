@@ -209,8 +209,9 @@ GameObject:
   - component: {fileID: 128828695}
   - component: {fileID: 128828697}
   - component: {fileID: 128828696}
+  - component: {fileID: 128828698}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,6 +274,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128828694}
   m_CullTransparentMesh: 1
+--- !u!114 &128828698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128828694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d060355fbd264428d5b530ed0577c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballCount: {fileID: 0}
+  isWhatDiod: {fileID: 0}
 --- !u!1 &252616202
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +481,7 @@ GameObject:
   - component: {fileID: 301073392}
   m_Layer: 5
   m_Name: Ball (2)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -652,7 +667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &571618292
 RectTransform:
   m_ObjectHideFlags: 0
@@ -911,6 +926,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d85d7e1cd518914eb2b6948f439f150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  diodBasket: {fileID: 0}
 --- !u!1 &686851689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,7 +1129,7 @@ GameObject:
   - component: {fileID: 734079330}
   m_Layer: 5
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1904,7 +1921,7 @@ GameObject:
   - component: {fileID: 1396960787}
   m_Layer: 5
   m_Name: Ball (4)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1992,7 +2009,7 @@ GameObject:
   - component: {fileID: 1436836813}
   m_Layer: 5
   m_Name: Ball (5)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2521,7 +2538,7 @@ GameObject:
   - component: {fileID: 1740537908}
   m_Layer: 5
   m_Name: Ball (1)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2879,7 +2896,7 @@ GameObject:
   - component: {fileID: 2023685280}
   m_Layer: 5
   m_Name: Ball (3)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3171,13 +3188,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2094290665}
+  - component: {fileID: 2094290666}
   m_Layer: 0
   m_Name: Choose_P_And_N
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2094290665
 Transform:
   m_ObjectHideFlags: 0
@@ -3194,6 +3212,18 @@ Transform:
   - {fileID: 634966192}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2094290666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094290664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1901cb38363f6024aa118b65e2506961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

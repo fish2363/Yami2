@@ -527,6 +527,7 @@ MonoBehaviour:
   ease: 1
   leftPoint: {fileID: 626834430989613646}
   rightPoint: {fileID: 554474365798905101}
+  moveSpeed: 0.8
 --- !u!50 &8753685090113118105
 Rigidbody2D:
   serializedVersion: 4

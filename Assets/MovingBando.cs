@@ -18,6 +18,10 @@ public class MovingBando : RandomEvent
 
     bool isStart;
 
+    [SerializeField]
+    private float moveSpeed;
+
+
     public override void Enter()
     {
         isStart = true;
@@ -40,13 +44,13 @@ public class MovingBando : RandomEvent
         if (isLeft)
         {
             yield return
-                transform.DOMoveX(leftPoint.position.x,2).SetEase(ease).WaitForCompletion();
+                transform.DOMoveX(leftPoint.position.x,moveSpeed).SetEase(ease).WaitForCompletion();
             isLeft = false;
         }
         else
         {
             yield return
-                transform.DOMoveX(rightPoint.position.x, 2).SetEase(ease).WaitForCompletion();
+                transform.DOMoveX(rightPoint.position.x, moveSpeed).SetEase(ease).WaitForCompletion();
             isLeft = true;
         }
         RandomMove();

@@ -7,6 +7,7 @@ TagManager:
   - Car
   - ColliderObj
   - Ground
+  - Ball
   layers:
   - Default
   - TransparentFX

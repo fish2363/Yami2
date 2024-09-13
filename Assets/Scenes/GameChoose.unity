@@ -2643,7 +2643,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uCC28 \uD53C\uD558\uAE30\n"
+  m_text: "\uBC18\uB3C4\uCCB4\n\uC7A5\uC560\uBB3C \uAC10\uC9C0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e72b94b3cd22d9140a8beaaedaadcb6a, type: 2}
   m_sharedMaterial: {fileID: -232403219245049157, guid: e72b94b3cd22d9140a8beaaedaadcb6a, type: 2}
