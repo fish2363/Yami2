@@ -118,7 +118,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395702086585425941}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1901cb38363f6024aa118b65e2506961, type: 3}
   m_Name: 
@@ -1542,7 +1542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1961036070194874064, guid: 728e2e4320aef614bb473b2190fbc504, type: 3}
       propertyPath: _speed
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2057674281529236937, guid: 728e2e4320aef614bb473b2190fbc504, type: 3}
       propertyPath: m_Pivot.x
@@ -1634,27 +1634,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3072921328599019816, guid: 728e2e4320aef614bb473b2190fbc504, type: 3}
       propertyPath: m_Size.x
-      value: 2.932526
+      value: 2.2962527
       objectReference: {fileID: 0}
     - target: {fileID: 3072921328599019816, guid: 728e2e4320aef614bb473b2190fbc504, type: 3}
       propertyPath: m_Size.y
-      value: 4.9914627
+      value: 3.5253658
       objectReference: {fileID: 0}
     - target: {fileID: 3072921328599019816, guid: 728e2e4320aef614bb473b2190fbc504, type: 3}
       propertyPath: m_Offset.x
-      value: -0.14390022
+      value: -0.10346681
       objectReference: {fileID: 0}
     - target: {fileID: 3072921328599019816, guid: 728e2e4320aef614bb473b2190fbc504, type: 3}
       propertyPath: m_Offset.y
-      value: -0.057977676
+      value: -0.037942648
       objectReference: {fileID: 0}
     - target: {fileID: 3072921328599019816, guid: 728e2e4320aef614bb473b2190fbc504, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 6.4
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3072921328599019816, guid: 728e2e4320aef614bb473b2190fbc504, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 6.4
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6287759377311496707, guid: 728e2e4320aef614bb473b2190fbc504, type: 3}
       propertyPath: m_FlipY

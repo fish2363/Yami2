@@ -27,7 +27,30 @@ public class Move : RandomEvent
     private void Update()
     {
         if (_isStart == true)
+        {
             Movement();
+            Rotation();
+        }
+    }
+
+    private void Rotation()
+    {
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.rotation = Quaternion.Euler(0, 0, -90);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 90);
+        }
+        else if (Input.GetKey(KeyCode.W))
+        {
+            transform.rotation = Quaternion.Euler(180, 0, 0);
+        }
+        else if(Input.GetKey(KeyCode.S))
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 
     private void FixedUpdate()
