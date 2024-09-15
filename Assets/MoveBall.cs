@@ -3,11 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MoveBall : MonoBehaviour,IDragHandler
+public class MoveBall : RandomEvent,IDragHandler
 {
+    private bool isStart;
+
+    public override void Enter()
+    {
+        isStart = true;
+    }
+
     public void OnDrag(PointerEventData eventData)
     {
-        Vector2 mouseDir = Input.mousePosition;
-        transform.position = mouseDir;
+        if(isStart)
+        {
+            Vector2 mouseDir = Input.mousePosition;
+            transform.position = mouseDir;
+        }
     }
 }

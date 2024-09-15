@@ -11,6 +11,7 @@ public class DiodBasket : MonoBehaviour
     public TextMeshProUGUI isWhatDiod;
 
     private int needBallCount;
+    private int currentBallCount;
 
     public void SetRandDiod(bool pDiod)
     {
@@ -23,6 +24,28 @@ public class DiodBasket : MonoBehaviour
         {
             isWhatDiod.text = "n형입니다";
             needBallCount = 5;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("ball"))
+        {
+            if (currentBallCount == needBallCount)
+                TimerManager.instance.OnDead?.Invoke(true);
+            else
+                currentBallCount++;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("ball"))
+        {
+            if (currentBallCount == needBallCount)
+                TimerManager.instance.OnDead?.Invoke(true);
+            else
+                currentBallCount--;
         }
     }
 }
