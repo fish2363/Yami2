@@ -6,12 +6,6 @@ public class ObjectTransform : MonoBehaviour
 {
     [SerializeField] private Transform _StandingTransform;
 
-    private void Update()
-    {
-        transform.position = _StandingTransform.position;
-
-    }
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
